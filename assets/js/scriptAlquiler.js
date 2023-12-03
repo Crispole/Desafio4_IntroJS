@@ -1,9 +1,9 @@
-import { propiedades_alquiler } from "/alquiler.js";
+import { propiedades_alquiler } from "./alquiler.js";
 
-const propiedadesAlquilerContainer = document.querySelector("#Alquiler");
+const propiedadesAlquilerContainer = document.querySelector("#propiedadesAlquiler");
 
 const mostrarDataCards = () => {
-    propiedadesAlquiler.forEach((propiedad) => {
+    propiedades_alquiler.forEach((propiedad) => {
     const {
     nombre,
     src,
@@ -27,7 +27,7 @@ const mostrarDataCards = () => {
             <h5 class="card-title">${nombre}</h5>
             <p class="card-text">${descripcion}</p>
             <p><i class="fas fa-map-marker-alt"></i> ${ubicacion}</p>
-            <p><i class="fas fa-bed"></i> ${habitaciones} Habitaciones |
+            <p><i class="fas fa-bed"></i> ${habitaciones}
             <i class="fas fa-bath"></i> 4 Baños</p>
             <p><i class="fas fa-dollar-sign"></i> ${costo}</p>
 

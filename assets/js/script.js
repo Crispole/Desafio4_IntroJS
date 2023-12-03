@@ -1,9 +1,9 @@
-import { propiedades_alquiler } from "./Alquiler.js";
-import { propiedades_venta } from "./Venta.js";
+import { propiedades_alquiler } from "./alquiler.js";
+import { propiedades_venta } from "./venta.js";
 
 const propiedadesAlquilerIndex = document.querySelector("#propiedadesAlquilerIndex");
 
-const mostrarDataAlquilerEnCards = () => {
+const mostrarDataAlquilerTotal = () => {
 for (let index = 0; index < 3; index++) {
     const {
     nombre,
@@ -28,7 +28,7 @@ for (let index = 0; index < 3; index++) {
             <h5 class="card-title">${nombre}</h5>
             <p class="card-text">${descripcion}</p>
             <p><i class="fas fa-map-marker-alt"></i> ${ubicacion}</p>
-            <p><i class="fas fa-bed"></i> ${habitaciones} Habitaciones |
+            <p><i class="fas fa-bed"></i> ${habitaciones}
             <i class="fas fa-bath"></i> 4 Baños</p>
             <p><i class="fas fa-dollar-sign"></i> ${costo}</p>
 
@@ -52,7 +52,7 @@ for (let index = 0; index < 3; index++) {
 
 const propiedadesVentaIndex = document.querySelector("#propiedadesVentaIndex");
 
-const mostrarDataVentaEnCards = () => {
+const mostrarDataVentaTotal = () => {
 for (let index = 0; index < 3; index++) {
     const {
     nombre,
@@ -79,7 +79,7 @@ for (let index = 0; index < 3; index++) {
             <h5 class="card-title">${nombre}</h5>
             <p class="card-text">${descripcion}</p>
             <p><i class="fas fa-map-marker-alt"></i> ${ubicacion}</p>
-            <p><i class="fas fa-bed"></i> ${habitaciones} Habitaciones |
+            <p><i class="fas fa-bed"></i> ${habitaciones}
             <i class="fas fa-bath"></i> 4 Baños</p>
             <p><i class="fas fa-dollar-sign"></i> ${costo}</p>
 
@@ -101,5 +101,5 @@ for (let index = 0; index < 3; index++) {
 }
 };
 
-mostrarDataAlquilerEnCards();
-mostrarDataVentaEnCards();
+mostrarDataAlquilerTotal();
+mostrarDataVentaTotal();
